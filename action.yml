@@ -1,0 +1,18 @@
+name: 'My Qodana Action'
+description: 'Reusable Qodana workflow'
+
+inputs: 
+  qodana_token:
+    description: 'Qodana API token'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Code Checkout
+      uses: actions/checkout@v3.6.0
+
+    - name: Qodana Scan
+      uses: JetBrains/qodana-action@v2023.2.6
+      env:
+        QODANA_TOKEN: ${{ inputs.qodana_token }}

@@ -1,4 +1,4 @@
-name: 'My Qodana Action'
+name: 'Qodana Composite'
 description: 'Reusable Qodana workflow'
 
 inputs: 

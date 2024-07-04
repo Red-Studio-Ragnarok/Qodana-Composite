@@ -13,6 +13,6 @@ runs:
       uses: actions/checkout@v4.1.7
 
     - name: Qodana Scan
-      uses: JetBrains/qodana-action@v2024.1.5
+      uses: JetBrains/qodana-action@v2024.1.8
       env:
         QODANA_TOKEN: ${{ inputs.qodana_token }}

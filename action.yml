@@ -14,5 +14,8 @@ runs:
 
     - name: Qodana Scan
       uses: JetBrains/qodana-action@v2024.2.3
+      with:
+        pr-mode: false
+        push-fixes: pull-request
       env:
         QODANA_TOKEN: ${{ inputs.qodana_token }}

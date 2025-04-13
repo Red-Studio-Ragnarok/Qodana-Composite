@@ -1,9 +1,9 @@
-name: 'Qodana Composite'
-description: 'Reusable Qodana workflow'
+name: Qodana Composite
+description: Reusable Qodana workflow
 
 inputs: 
   qodana_token:
-    description: 'Qodana API token'
+    description: Qodana API token
     required: true
 
 runs:
